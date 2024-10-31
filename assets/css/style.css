@@ -1,0 +1,206 @@
+/* Variables de colores */
+:root {
+  --color-primary: #22223b;
+  --color-secondary: #4a4e69;
+  --color-accent: #9a8c98;
+  --color-light: #c9ada7;
+  --color-background: #f2e9e4;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav h1 {
+  margin: 0;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+  padding: 1em;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+li a {
+  padding: 1em;
+  width: 100%;
+}
+
+li a:hover, .product button:hover {
+  background-color: var(--secondary-color);
+}
+
+a i {
+  font-size: 1.5em;
+  padding: .5em;
+}
+
+/* Main Content */
+main {
+  margin-left: 220px;
+  width: 100%;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.home-section {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.features-section {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+}
+
+.gallery-section {
+  background-color: var(--color-accent);
+}
+
+.story-section {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+}
+
+.gameplay-section {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.contact-section {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery-item {
+  background-color: var(--color-light);
+  /* Placeholder for images */
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: grayscale(100%);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .social a {
+  color: var(--color-light);
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer .social a:hover {
+  color: var(--color-accent);
+}
+
+/* Responsive for small screens */
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  #menu-toggle:checked+.hamburger+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    gap: 2em;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    right: 0;
+    padding: 1em;
+  }
+}

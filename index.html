@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timekeeper's Farm - La Aventura Definitiva</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style copy.css">
+  </head>
+  <body>
     <div class="container">
-        <!-- Sidebar Navigation -->
-        <nav class="nav">
-            <div class="logo">
-                <img src="assets/imgs/logo.png" alt="Logo">
-            </div>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></button>
-            <ul class="menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#features">Características</a></li>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#story">Historia</a></li>
-                <li><a href="#gameplay">Gameplay</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <!-- Main Content -->
-        <main>
+      <!-- Navigation Menu -->
+      <nav class="nav">
+        <div class="logo"><img src="assets/imgs/logo.png" alt="Logo"></div>
+        <!-- Hidden checkbox to toggle menu visibility -->
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        <button class="hamburger2"><i class="fa-solid fa-x"></i></button>
+        <ul class="menu" id="menu">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#features">Características</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#story">Historia</a></li>
+          <li><a href="#gameplay">Gameplay</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="nav-spacer"><div></div></div>
+      <!-- Main Section -->
+      <main>
             <!-- Home Section -->
-            <section id="home" class="section home-section">
+            <section id="home" class="section banner">
                 <!-- Aqui va el video, gif o imagen de fondo del juego -->
-                <h2>Bienvenido a Timekeeper's Farm</h2>
-                <p>Explora un mundo lleno de misterio, steampunk y criaturas tecnológicas. ¿Podrás proteger la granja en esta aventura?</p>
+                <div class="banner-content">
+                  <p>Explora un mundo lleno de misterio, steampunk y criaturas tecnológicas. ¿Podrás proteger la granja en esta aventura?</p>
+                  <p>Es lo que querria decir, pero el juego esta actualmente en desarrollo asi que dejenme explicarles un poco de como va a ser y mostrarles una galeria de juegos en los que estara basado este titulo.</p>
+                </div>
+                <div class="banner-img"><img src="assets/imgs/logoai.png" alt=""></div>
             </section>
 
             <!-- Features Section -->
-            <section id="features" class="section features-section">
+            <section id="features" class="section features">
                 <h2>Características del Juego</h2>
                 <ul>
-                    <li>Tiroteos intensos en primera persona</li>
-                    <li>Simulación de granja</li>
-                    <li>Misterios de viaje en el tiempo</li>
-                    <li>Creaturas orgánicas y tecnológicas</li>
+                    <li><p>Tiroteos intensos en primera persona</p></li>
+                    <li><p>Simulación de granja</p></li>
+                    <li><p>Misterios de viaje en el tiempo</p></li>
+                    <li><p>Creaturas orgánicas y tecnológicas</p></li>
                 </ul>
             </section>
 
             <!-- Gallery Section -->
-            <section id="gallery" class="section gallery-section">
+            <section id="gallery" class="section gallery">
                 <h2>Galería de Imágenes</h2>
                 <div class="gallery-grid">
-                    <div class="gallery-item"><!-- Imagen 1 --></div>
-                    <div class="gallery-item"><!-- Imagen 2 --></div>
-                    <div class="gallery-item"><!-- Imagen 3 --></div>
-                    <div class="gallery-item"><!-- Imagen 4 --></div>
-                    <div class="gallery-item"><!-- Imagen 5 --></div>
-                    <div class="gallery-item"><!-- Imagen 6 --></div>
-                    <div class="gallery-item"><!-- Imagen 7 --></div>
-                    <div class="gallery-item"><!-- Imagen 8 --></div>
+                    <div class="gallery-item"><img src="assets/imgs/atomicrops.jpg" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/atrio.webp" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/ft.webp" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/ror2.webp" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/ultrakill.png" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/rw.avif" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/SlimeRancher.webp" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/tab.jpg" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/ripout.webp" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/borderlands.avif" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/pvz.png" alt=""></div>
+                    <div class="gallery-item"><img src="assets/imgs/twd.avif" alt=""></div>
                 </div>
             </section>
 
             <!-- Story Section -->
-            <section id="story" class="section story-section">
+            <section id="story" class="section story">
                 <h2>Historia</h2>
                 <p>Nuestro protagonista viaja en el tiempo a una granja abandonada, donde deberá enfrentar oleadas de criaturas mitad orgánicas y mitad tecnológicas en un ambiente steampunk, lleno de misterio.</p>
             </section>
 
             <!-- Gameplay Section -->
-            <section id="gameplay" class="section gameplay-section">
-                <h2>Gameplay</h2>
-                <p>Lucha contra enemigos invisibles y construye mejoras en un sistema de habilidad único. Explora el entorno para recolectar materiales que te ayudarán a sobrevivir.</p>
+            <section id="gameplay" class="section gameplay">
+                <div class="gameplay-content">
+                  <h2>Gameplay</h2>
+                  <p>Lucha contra enemigos invisibles y construye mejoras en un sistema de habilidad único. Explora el entorno para recolectar materiales que te ayudarán a sobrevivir.</p>
+                </div>
+                <img src="assets/imgs/gameplayloop.png" alt="">
             </section>
 
             <!-- Contact Section -->
-            <section id="contact" class="section contact-section">
+            <section id="contact" class="section contact">
                 <h2>Contacto</h2>
                 <p>Para más información, síguenos en nuestras redes sociales o contáctanos por correo.</p>
+                <div class="social">
+                  <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </section>
         </main>
 
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>Todos los derechos reservados © UezarDev</p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
-      <!-- Footer -->
-      <footer>
-          <p>Todos los derechos reservados © Timekeeper's Farm</p>
-          <div class="social">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-          </div>
-      </footer>
-
-    <!-- Font Awesome Kit -->
+    </footer>
     <script src="https://kit.fontawesome.com/198389ce38.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
